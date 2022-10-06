@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]D。<br>[解析]A、 向盛有一定量Na<sub>2</sub>C0<sub>3</sub>溶液的容器中不断滴入Ca(OH)<sub>2</sub>溶液至过量，因没有改变OH<sup>-</sup>，所以 溶液pH总是大于7；<br>B、氢氧化钙溶液中含有水，水的质量会在原碳酸钠溶液中溶剂的基础上不断增加；<br>C、Na<sub>2</sub>C0<sub>3</sub>与Ca(OH)<sub>2</sub>反应生成Ca</sub>C0<sub>3</sub>沉淀和NaOH，沉淀质量会随氢氧化钙的增加通过反应从0增加；<br>D、Na<sub>2</sub>C0<sub>3</sub>与Ca(OH)<sub>2</sub>反应生成Ca</sub>C0<sub>3</sub>沉淀和NaOH，钠元素质量始终保持不变，符合题意；故选D。";
+        c.appendChild(ans);
+        var xsansA = document.getElementById('xsans');
+        xsansA.remove()
+    } 
+}
+
+</script>
+
+</head>
+<div id="con">
+    <p>(2022衢州中考)现向盛有一定量Na<sub>2</sub>C0<sub>3</sub>,溶液的容器中不断滴入Ca(OH)<sub>2</sub>溶液至过量，下列图像能正确反映容器中相关量随滴加时间变化的是（）。</p>
+    <img src="3.png" alt="选项">
+    <div id="xsans" onclick="xsAnswers()">显示答案解析</div>
+    <br>
+    <br>
+</div>
+
+</body>
+</html>
