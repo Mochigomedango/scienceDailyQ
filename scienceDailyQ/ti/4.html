@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]30 1500";
+        c.appendChild(ans);
+        var xsansA = document.getElementById('xsans');
+        xsansA.remove()
+    } 
+}
+</script>
+
+</head>
+<div id="con">
+    <p>(2021丽水中考)科技改变生活，某餐馆用智能送菜机器人替代人工送菜。(1)该机器人以1米/秒的速度运行30米将菜送到客人桌前，用时____秒；(2)若机器人工作时牵引力恒为50牛，完成本次送菜，牵引力做功____焦。</p>
+    <div id="xsans" onclick="xsAnswers()">显示答案解析</div>
+    <br>
+    <br>
+</div>
+
+</body>
+</html>

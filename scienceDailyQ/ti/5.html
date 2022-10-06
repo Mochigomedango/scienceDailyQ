@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]ABD。<br>[解析]懒得写了。";
+        c.appendChild(ans);
+        var xsansA = document.getElementById('xsans');
+        xsansA.remove()
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>(多选)同学们在做喷泉实验，下列搭配能使喷泉呈红色的是()</p>
+    <div id="cho">A.①NH<sub>3</sub>②H<sub>2</sub>O③无色酚酞试液 B.①CO<sub>2</sub>②NaOH③无色酚酞试液 C.①SO<sub>2</sub>②NaOH③无色酚酞试液 D.①HCl②H<sub>2</sub>O③紫色石蕊试液 E.①SO<sub>3</sub>②H<sub>2</sub>O③H<sub>2</sub>O F.①NH<sub>3</sub>②H<sub>2</sub>O③CuSO<sub>4</sub></div>
+    <img src="5.png" alt="题图">
+    <div id="xsans" onclick="xsAnswers()">显示答案解析</div>
+</div>
+
+</body>
+</html>
