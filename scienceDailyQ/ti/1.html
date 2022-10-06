@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]D。<br>[解析]由W=Fs变形得s=W/F,将数据代入可得s=W/F=57257J/500N=114.514m，最接近的答案是100m，故选D。";
+        c.appendChild(ans);
+        var xsansA = document.getElementById('xsans');
+        xsansA.remove()
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>(2014日本下北泽国立中学校毕业考试)摄入过多的能量会导致肥胖。田所同学喝了如图所示的一瓶可口可乐后想通过爬楼梯的方式消耗掉摄入的能量，请你估计他要爬的高度最接近于( )。</p>
+    <div id="cho">A.40000m B.10000m C.1000m D.100m</div>
+    <div id="xsans" onclick="xsAnswers()">显示答案解析</div>
+    <br>
+    <img src="1.png" alt="题图">
+    <br>
+</div>
+
+</body>
+</html>
