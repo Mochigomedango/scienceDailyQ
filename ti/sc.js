@@ -5,7 +5,7 @@ var randomBgIndex = Math.round( Math.random() * 1 );
 document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat 50% 0}</style>');
 var link = document.createElement('link');
 link.rel = 'shortcut icon';
-link.href = '../favicon.ico';
+link.href = '../favicon3.ico';
 link.type =  'image/x-icon';
 document.getElementsByTagName('head')[0].appendChild(link);
 window.onload = function(){

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]D。<br>[解析]A:实心球在b点具有向右的速度，故球具有动能；B:a点的机械能等于d点机械能；C:a点的机械能等于d点的机械能，由于a点的高度大于d点，说明a点的重力势能大于d点，所以a点动能比d点动能小，故错误；D:两点的机械能相等，有因为ad的高度相等，重力势能相等，所以ad动能相等";
+        c.appendChild(ans);
+        var xsansA = document.getElementById('xsans');
+        xsansA.remove()
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>(2022余姚九上期末)体育课上小明同学进行抛实心球的训练，他将球斜向上抛出，球的运动轨迹如图所示，a、b、c、d为轨迹上的点，a、c距离地面一样高，不计空气阻力，则实心球在(  )。</p>
+    <div id="cho">A.b点没有动能 B.a点的机械能比d点的机械能大 C.a点的动能比d点的动能大 D.a、c两点的机械能相等</div>
+    <div id="xsans" onclick="xsAnswers()">显示答案解析</div>
+    <br>
+    <img src="6.png" alt="题图">
+    <br>
+</div>
+
+</body>
+</html>
