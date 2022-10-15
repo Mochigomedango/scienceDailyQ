@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]C。<br>[解析]A:由于杆匀速转动(处于平衡状态)，所以<mathp>Fl<sub>1</sub>=Gl<sub>2</sub></mathp>。由于杆从图示位置沿顺时针方向匀速转至虚线位置的过程中，则阻力臂<mathp>l<sub>2</sub></mathp>逐渐减小，所以拉力<mathp>F</mathp>逐渐变小，A错误；<br>B:根据<mathp>Fl<sub>1</sub>=Gl<sub>2</sub></mathp>、<mathp>l<sub>1</sub>&lt;l<sub>OA</sub></mathp>、<mathp>l<sub>OA</sub>=&frac12;l<sub>OB</sub></mathp>可得<mathp>F=Gl<sub>2</sub>/l<sub>1</sub>&lt;Gl<sub>OA</sub>/l<sub>1</sub>=&frac12;l<sub>OB</sub>/l<sub>1</sub>=&frac12;G</mathp>，B错误；<br>C:由于阻力臀<mathp>l<sub>2</sub></mathp>逐渐变小，物体<mathp>M</mathp>的重为<mathp>G</mathp>不变，则根据<mathp>Fl<sub>1</sub>=Gl<sub>2</sub></mathp>可得<mathp>Fl<sub>1</sub></mathp>的大小(拉力<mathp>F</mathp>跟它力臂的乘积)逐渐变小，C正确；<br>D:由于C选项是正确的，所以D错误啊。";
+        c.appendChild(ans);
+        var xsansA = document.getElementById('xsans');
+        xsansA.remove()
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>(2022宁波文峰中学第一次月考)如图所示，在轻质杆<mathp>OB</mathp>的中点<mathp>A</mathp>处，悬挂有重为<mathp>G</mathp>的物体<mathp>M</mathp>，在端点B施加方向始终跟杆垂直的拉力<mathp>F</mathp>，杆从图示位置沿顺时针方向匀速转至虚线位置的过程中，下列叙述中正确的是（ ）</p>
+    <div id="cho">A.拉力<math>F</math>逐渐变大  B.拉力<math>F</math>始终大于<math>&frac12;G</math>、小于<math>G</math>，该杠杆是省力杠杆 C.拉力<math>F</math>跟它力臂的乘积变小 D.以上说法均不正确啊</div>
+    <div id="xsans" onclick="xsAnswers()">显示答案解析</div>
+    <br>
+    <img src="10.png" alt="题图">
+    <br>
+</div>
+
+</body>
+</html>

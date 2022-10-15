@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]C。<br>[解析]先后用同样大小的力<mathp>F</mathp>使物体沿力的方向移动相同的距离<mathp>s</mathp>,所以<mathp>W<sub>甲</sub>=W<sub>乙</sub>=W<sub>丙</sub>=Fs</mathp>";
+        c.appendChild(ans);
+        var xsansA = document.getElementById('xsans');
+        xsansA.remove()
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>(2022杭州中考)现有甲、乙、丙三个质量不同的物体(<mathp>m<sub>甲</sub>>m<sub>乙</sub>>m<sub>丙</sub></mathp>>)，在相等的恒力<mathp>F</mathp>作用下，分别在水平方向、沿斜面向上、竖直方向通过了相等的距离<mathp>s</mathp>，如图所示。F在三种情况下做的功分别为<mathp>W<sub>甲</sub></mathp>、<mathp>W<sub>乙</sub></mathp>、<mathp>W<sub>丙</sub></mathp>，三者大小判断正确的是（  ）</p>
+    <div id="cho">A．<mathp>W<sub>甲</sub> &gt; W<sub>乙</sub> &gt; W<sub>丙</sub></mathp> B．<mathp>W<sub>甲</sub> &lt; W<sub>乙</sub> &lt; W<sub>丙</sub></mathp> C．<mathp>W<sub>甲</sub>=W<sub>乙</sub>=W<sub>丙</sub></mathp> D．<mathp>W<sub>甲</sub>=W<sub>乙</sub> &lt; W<sub>丙</sub></mathp>></div>
+    <div id="xsans" onclick="xsAnswers()">显示答案解析</div>
+    <br>
+    <img src="7.png" alt="题图">
+    <br>
+</div>
+
+</body>
+</html>

@@ -7,7 +7,12 @@ p {
     font-size:36px;
     font-family: "黑体";
     color:rgb(152,110,59);
-    -webkit-text-stroke: 1px white;
+    text-shadow: white 2px 0 0, white 0 2px 0, white -2px 0 0, white 0 -2px 0;
+}
+mathp {
+    font-size:30px;
+    font-style:italic;
+    font-family: "Cambria Math";
 }
 ans {
     /*text-align:center;*/
@@ -15,7 +20,7 @@ ans {
     font-size:36px;
     font-family: "黑体";
     color:rgb(152,110,59);
-    -webkit-text-stroke: 1px white;
+    text-shadow: white 2px 0 0, white 0 2px 0, white -2px 0 0, white 0 -2px 0;
 }
 #cho {
     /*text-align:center;*/
@@ -23,7 +28,7 @@ ans {
     font-size:35px;
     font-family: "黑体";
     color:rgb(152,110,59);
-    -webkit-text-stroke: 1px white;
+    text-shadow: white 2px 0 0, white 0 2px 0, white -2px 0 0, white 0 -2px 0;
 }
 #con {
     display: inline-block;
@@ -45,7 +50,7 @@ ans {
     font-size:35px;
     font-family: "黑体";
     color:rgb(152,110,59);
-    -webkit-text-stroke: 1px white;
+    text-shadow: white 2px 0 0, white 0 2px 0, white -2px 0 0, white 0 -2px 0;
 
     height: 40px;
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">G
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]省力 20000N<br>[解析]第一空<br><mathp>F<sub>1</sub>l<sub>1</sub>=F<sub>2</sub>l<sub>2</sub> G=F2=F<sub>1</sub>l<sub>1</sub>/l<sub>2</sub>=200N×9m/0.09m=20000N</mathp>";
+        var iImg = document.createElement("img"); 
+        iImg.src = "8_2.png";
+        c.appendChild(ans);
+        c.appendChild(iImg);
+        var xsansA = document.getElementById('xsans');
+        xsansA.remove()
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>(多地中考改编)据报道，在杭州动物园，一位物理老师用一只弹簧测力计“称”出了一头大象重，如图所示，他动用了吊车、铁笼和一根很长的硬棒作为辅助工具，硬棒实质上是一个()杠杆。请你在图1中补全杠杆五要素。吊车的吊钩在棒上的固定处<mathp>O</mathp>距弹簧测力计一端的距离为<mathp>9m</mathp>，距系铁笼处的距离为<mathp>9cm</mathp>，当棒处于水平平衡时弹簧测力计的示数为<mathp>200N</mathp>。若不计棒及铁笼的重，则该大象重约为()。</p>
+    <div id="xsans" onclick="xsAnswers()">显示答案解析</div>
+    <img src="8_1.png" alt="题图">
+    <br>
+</div>
+
+</body>
+</html>

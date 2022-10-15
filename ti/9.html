@@ -12,7 +12,7 @@ function xsAnswers(){
     if (xs==false){
         xs=true;
         var ans = document.createElement("ans");
-        ans.innerHTML = "[答案]ABD。<br>[解析]懒得写了。";
+        ans.innerHTML = "[答案]①②④⑥。<br>[解析]见下图。";
         c.appendChild(ans);
         var xsansA = document.getElementById('xsans');
         xsansA.remove()
@@ -23,10 +23,11 @@ function xsAnswers(){
 </head>
 
 <div id="con">
-    <p>(多选)同学们在做喷泉实验，下列搭配能使喷泉呈红色的是()</p>
-    <div id="cho">A.①NH<sub>3</sub>②H<sub>2</sub>O③无色酚酞试液 B.①CO<sub>2</sub>②NaOH③无色酚酞试液 C.①SO<sub>2</sub>②NaOH③紫色石蕊试液 D.①HCl②H<sub>2</sub>O③紫色石蕊试液 E.①SO<sub>3</sub>②H<sub>2</sub>O③H<sub>2</sub>O F.①NH<sub>3</sub>②H<sub>2</sub>O③CuSO<sub>4</sub></div>
-    <img src="5.png" alt="题图">
+    <p>(2021杭十二中九上期中)生活中处处有科学。下列日常活动，利用了费力杠杆的是（   ）</p>
     <div id="xsans" onclick="xsAnswers()">显示答案解析</div>
+    <br>
+    <img src="9.gif" alt="选项">
+    <br>
 </div>
 
 </body>
