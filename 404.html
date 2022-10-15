@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="icon" href="favicon2.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon2.ico" type="image/x-icon"/>
+<style>
+p {
+    text-align:center;
+    font-size:40px;
+    font-family: "黑体";
+    color:rgb(152,110,59);
+    text-shadow: white 2px 0 0, white 0 2px 0, white -2px 0 0, white 0 -2px 0;
+}
+#errorkuang {
+    display: inline-block;
+    cursor:pointer;
+    
+    text-align:center;
+    
+    font-size:35px;
+    font-family: "黑体";
+    color:rgb(152,110,59);
+    text-shadow: white 2px 0 0, white 0 2px 0, white -2px 0 0, white 0 -2px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+    height: 80px;
+    
+    border-radius: 10px;
+    box-shadow: 0 10px 50px 0px rgb(24,22,28);
+    backdrop-filter: blur(3px);
+
+    padding:10px;
+}
+body .dishelp{
+    font-size:5px;
+    font-family: "黑体";
+    color:rgb(152,110,59);
+    position:fixed;
+    bottom:0px; 
+}
+</style>
+<script>
+var bodyBgs = [];
+bodyBgs[0] = "images/01.jpg";
+bodyBgs[1] = "images/02.jpg";
+var randomBgIndex = Math.round( Math.random() * 1 );
+document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') ;background-size:100% }</style>');
+takagisanlink="https://zh.moegirl.org.cn/%E6%93%85%E9%95%BF%E6%8D%89%E5%BC%84%E7%9A%84%E9%AB%98%E6%9C%A8%E5%90%8C%E5%AD%A6"
+</script>    
+</head>
+<body>
+<p>404 NOT FOUND</p>
+<div id="errorkuang" onclick="window.open('index.html','_self')">Click here to go to the index page.</div>
+<div class="dishelp" onclick="window.open(takagisanlink)">2022 @Mochigomedango | Please do not spread the website. | Takagi san saikou! </div>
+</body>
+</html>
