@@ -13,6 +13,7 @@ mathp {
     font-size:30px;
     font-style:italic;
     font-family: "Cambria Math";
+    padding:5px;
 }
 ans {
     /*text-align:center;*/
@@ -32,12 +33,13 @@ ans {
 }
 #con {
     display: inline-block;
-    padding: 1%;
+    padding-inline: 5px;
     
     width:40px;
     height: auto;
 
-    margin-top: 3%;
+    margin-top: 1%;
+    margin-bottom: 5%;
     margin-left:125px;
     border-radius: 10px;
     box-shadow: 0 10px 50px 0px rgb(24,22,28);
@@ -59,4 +61,65 @@ ans {
     border-radius: 8px;
     box-shadow: 0 5px 25px 0px rgb(24,22,28);
     backdrop-filter: blur(1px);
+
+}
+#xsansSns {
+    /*悬浮的显示答案按钮*/
+    display: inline-block;
+    cursor:pointer;
+    
+    height: 40px;
+    width: auto;
+
+    padding-inline: 10px;
+
+    margin-bottom:10px;
+    border-radius: 28px;
+    /*box-shadow: 0 0px 25px 0px rgb(24,22,28);*/
+    backdrop-filter: blur(1px);
+    background-color: rgb(152,110,59);
+
+}
+#tiFrom {
+    display: inline-block;
+    cursor:pointer;
+    
+    height: 40px;
+    width: auto;
+
+    padding-inline: 10px;
+
+    margin-bottom:10px;
+    border-radius: 28px;
+    /*box-shadow: 0 0px 25px 0px rgb(24,22,28);*/
+    backdrop-filter: blur(1px);
+    background-color: rgb(152,110,59);
+
+}
+#pen {
+    right:130px;
+    display: inline-block;
+    cursor:pointer;
+    
+    height: 40px;
+    width: auto;
+
+    padding-inline: 10px;
+
+    margin-bottom:10px;
+    border-radius: 100px;
+    /*box-shadow: 0 0px 25px 0px rgb(24,22,28);*/
+    backdrop-filter: blur(1px);
+    background-color: rgb(152,110,59);
+
+}
+#sns {
+    
+    margin-left:130px;
+    font-size:30px;
+    font-family: "黑体";
+    color:white;
+    text-align:center;
+    position:fixed;
+    bottom:10px; 
 }

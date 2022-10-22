@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]A。<br>[解析]热烈祝贺中国共产党第二十届全国代表大会胜利闭幕！";
+        c.appendChild(ans);
+        var xsansA = document.getElementById('xsansSns');
+        xsansA.remove()
+        function linkCCP20() {
+            link = "https://i0.hdslb.com/bfs/archive/f468cd5bbd946af335badec23c7b58d6ad39bd7b.png";
+            window.open(link,'_self');
+        }
+        setTimeout(linkCCP20, 20000);
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>一名同学在利用滑轮组提升一筐篮球，下列操作能使机械效率提升的是。</p>
+    <div id="cho">A.再往框里加一个篮球 B.拿掉一个篮球 C.换一个更重的动滑轮 D.以上三种都不可以</div>
+    <br>
+    <img src="12.png" alt="题图">
+    <br>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">🖊</div>
+    <div id="tiFrom">2020温州九上期末</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

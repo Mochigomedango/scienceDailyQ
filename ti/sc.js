@@ -16,4 +16,3 @@ window.onload = function(){
     c.style.width = (w-250)+'px';
 }
 
-

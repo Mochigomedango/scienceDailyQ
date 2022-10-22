@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]D。<br>[解析]见下图。";
+        c.appendChild(ans);
+        var iImg = document.createElement("img"); 
+        iImg.src = "13_2.png";
+        c.appendChild(iImg);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>一名工人在利用滑轮组提升重物，已知动滑轮和水桶总重<mathp>20N</mathp>，将重为<mathp>160N</mathp>的水以<mathp>0.2m/s</mathp>的速度匀速提起，所用时间为<mathp>20s</mathp>，此过程工人拉力做的功随时间变化的图像如图乙所示，下列说法正确的是（ ）</p>
+    <div id="cho">A.工人的拉力为<mathp>200N</mathp> B.工人做功的效率为<mathp>100W</mathp> C.绳子自由端移动的距离为<mathp>4m</mathp> D.该装置的机械效率为<mathp>80%</mathp></div>
+    <br>
+    <img src="13_1.png" alt="题图">
+    <br>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">🖊</div>
+    <div id="tiFrom">2020温州九上期末</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

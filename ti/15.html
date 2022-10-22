@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]增大 物体对外做功，内能减小";
+        c.appendChild(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>定海区初中科学实验再设计评比中，董教师对书本演示气体对外做功装置进行了改进（如图）：用一个大的塑料瓶，瓶口塞橡皮塞，塞子里面安装气门芯，连接打气筒在瓶内伸入温度传感器探头，实验时装置气密性良好。<br>(1) 用打气筒向瓶内打气，在橡皮塞未弹出之前，温度传感器示数()(选填“增大”、“减小”或“不变”)。(2)当橡皮塞弹出时，瓶内出现大量白雾。根据实验现象可以得出的结论是：(     )</p>
+    <img src="15.png" alt="题图">
+    <br>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">🖊</div>
+    <div id="tiFrom">2022舟山定海期末</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

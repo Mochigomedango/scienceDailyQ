@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]做功或右图中丙 甲 丙";
+        c.appendChild(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>老师用左图所示实验装置，加热试管使水沸腾，发现试管斜上方的小风车开始不停地转动。由此引出以下问题，请利用所学的知识回答。<br>(1)左图实验中能量转化方式与图2中汽油机的哪个冲程相同？(2)右图汽油机的工作冲程顺序是丁→(   )→(   )→乙</p>
+    <img src="16.png" alt="题图">
+    <br>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">🖊</div>
+    <div id="tiFrom">2022台州仙居期末</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]C。<br>[解析]见下图。";
+        c.appendChild(ans);
+        var iImg = document.createElement("img"); 
+        iImg.src = "14_2.png";
+        c.appendChild(iImg);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>如图所示，拉力<mathp>F</mathp>为<mathp>5N</mathp>，物体<mathp>A</mathp>以<mathp>0.1m/s</mathp>的速度在物体<mathp>B</mathp>表面向左做匀速直线运动(<mathp>B</mathp>表面足够长)；物体<mathp>B</mathp>静止在地面上，受到地面水平向左<mathp>4N</mathp>的摩擦力，弹簧测力计示数为<mathp>12N</mathp>．下列说法正确的是（   ）</p>
+    <div id="cho">A.物体<mathp>A</mathp>受到的摩擦力为<mathp>10N</mathp> B.拉力<mathp>F</mathp>的功率为<mathp>1.5W</mathp> C.滑轮组的机械效率为<mathp>80%</mathp> D.拉力<mathp>F</mathp>增大到<mathp>15N</mathp>，物体<mathp>B</mathp>开始向左运动</div>
+    <br>
+    <img src="14_1.png" alt="题图">
+    <br>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">🖊</div>
+    <div id="tiFrom">2020勤州九上期中</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>
