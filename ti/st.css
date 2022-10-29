@@ -82,7 +82,7 @@ ans {
 }
 #tiFrom {
     display: inline-block;
-    cursor:pointer;
+
     
     height: 40px;
     width: auto;
@@ -98,7 +98,6 @@ ans {
 }
 #pen {
     display: inline-block;
-    cursor:pointer;
     
     height: 40px;
     width: auto;
