@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]<mathp>NaCl</mathp> <mathp>BaCl<sub>2</sub></mathp> B和D<br>[解析]五种物质中<mathp>NaCl</mathp>只能与一种物质反应(<mathp>AgNO<sub>3</sub></mathp>)<br>A和B反应有气体产生，则A和B为碳酸钠和盐酸中的一种<br>因<mathp>AgNO<sub>3</sub></mathp>能与另四种物质都反应，所以图中还缺少一条连线，此线应连在B、D两溶液之间。";
+        c.appendChild(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>如图表示<mathp>NaCl</mathp>、<mathp>Na<sub>2</sub>CO<sub>3</sub></mathp>、<mathp>AgNO<sub>3</sub></mathp>、<mathp>BaCl<sub>2</sub></mathp>、<mathp>HCl</mathp>五种溶液之间的部分反应关系，线条相连的溶液之间可以发生化学反应。请问：(1)E是(
+)溶液。(2)A和B反应有气体生成，则C是(
+)溶液。(3)图中还缺少一条连线，此线应连在(
+)两溶液之间。(填字母)</p>
+    <br>
+    <img src="20.png" alt="题图">
+    <br>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">★★☆</div>
+    <div id="tiFrom">2022上虞模拟</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

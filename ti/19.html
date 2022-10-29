@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]B。<br>[解析]<mathp>CO</mathp>气体应从a通入。";
+        c.appendChild(ans);
+        var xsansSns = document.getElementById('xsansSns');
+        xsansSns.remove()
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>“万能瓶”是最普通、很重要的一种仪器，它在化学实验中有广泛的应用。下列使用“万能瓶”的操作不能达到目的的是(          )。</p>
+    <img src="19.png" alt="题图">
+    <br>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">★☆☆</div>
+    <div id="tiFrom">忘了哪年懒得回去看宁波中考改编</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<style>
+titu{position: absolute; background: url(21_1.png) no-repeat; margin: auto; left: 650px; right: 0; top: 0; bottom: 0;}
+</style>
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]D。<br>[解析]<br>";
+        c.appendChild(ans);
+        var iImg = document.createElement("img"); 
+        iImg.src = "21_2.png";
+        c.appendChild(iImg);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>小冰同学是个爱动脑的孩子，他想知道<br>家里电风扇的实际功率多大，于是他将<br>家里其他用电器都关闭，只让电风扇单<br>独工作了<mathp>72s</mathp>，如图的电能表转盘转了<mathp>5</mathp><br>转，下列说法正确的是（   ）</p>
+    <div id="cho">A.此电能表转盘每小时转过<mathp>2500</mathp>转<br>
+B.电能表是测量电路中用电器功率的仪器<br>
+C.在此期间电风扇消耗的电能是<mathp>36000J</mathp><br>
+D.电风扇的实际功率是<mathp>100W</mathp></div>
+    <titu></titu>
+    <br>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">★★★</div>
+    <div id="tiFrom">2019九上台州椒江期末</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

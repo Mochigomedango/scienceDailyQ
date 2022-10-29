@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]A。<br>[解析]A手和冰之间发生热传递，使冰熔化，是通过热传递的方式改变物体的内能，故A说法错误；B吹气融冰，是用热传递的方式改变冰的内能，故B说法正确；C小鸟双脚被冻结在铁栏杆上，是因为铁是热的良导体，故C说法正确；D鸡拍动翅膀，消耗体内有机物，将化学能转化为机能，故D说法正确。故选A。";
+        c.appendChild(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>一网友发现小鸟停在铁栏杆上，误以为小鸟在停驻休息，观察后发现它的双脚被冻结在栏杆上。他慢慢接近，小鸟受惊拍动翅膀；为了避免小鸟双脚受伤，他便一把抓住，试图以手的温度让冰融化。由于效果不佳，他干脆吹气融冰。经过他的不断努力，小鸟获得了自由。根据上述材料，下列分析不合理的是（   ）</p>
+    <div id="cho">A.
+        以手的温度让冰熔化，是通过做功的方式实现
+        B.
+        吹气融冰，是用热传递的方式让冰熔化
+        C.
+        小鸟双脚被冻结在铁栏杆上，与铁是热的良导体有关
+        D.
+        小鸟拍动翅膀，消耗体内有机物，将化学能转化为机械能</div>
+    <br>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">🖊</div>
+    <div id="tiFrom">2020九上台州天台期末</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

@@ -13,7 +13,7 @@ mathp {
     font-size:30px;
     font-style:italic;
     font-family: "Cambria Math";
-    padding:5px;
+    padding:3px;
 }
 ans {
     /*text-align:center;*/
@@ -97,7 +97,6 @@ ans {
 
 }
 #pen {
-    right:130px;
     display: inline-block;
     cursor:pointer;
     
@@ -107,7 +106,7 @@ ans {
     padding-inline: 10px;
 
     margin-bottom:10px;
-    border-radius: 100px;
+    border-radius: 28px;
     /*box-shadow: 0 0px 25px 0px rgb(24,22,28);*/
     backdrop-filter: blur(1px);
     background-color: rgb(152,110,59);

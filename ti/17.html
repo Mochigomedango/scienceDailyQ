@@ -12,7 +12,7 @@ function xsAnswers(){
     if (xs==false){
         xs=true;
         var ans = document.createElement("ans");
-        ans.innerHTML = "[答案]做功或右图中丙 甲 丙";
+        ans.innerHTML = "[答案]A。<br>[解析]做功冲程。A电火花发生器点火后将盒盖顶出，将内能转化为盒盖的机械熊，故A符合题意；B滚摆向下运动，将重力势能转化为动能，故B不合题意：C向下压缩空气引火仪，将机械能转化为空气的内能，故C不合题意；D酒精灯加热杯中冷水，将酒精灯火焰的内熊转移到水中，故D不合题意。故选A。";
         c.appendChild(ans);
         var xsansAId = document.getElementById('xsansSns');
         xsansAId.remove();
@@ -30,13 +30,12 @@ function xsAnswers(){
 </head>
 
 <div id="con">
-    <p>老师用左图所示实验装置，加热试管使水沸腾，发现试管斜上方的小风车开始不停地转动。由此引出以下问题，请利用所学的知识回答。<br>(1)左图实验中能量转化方式与图2中汽油机的哪个冲程相同？(2)右图汽油机的工作冲程顺序是丁→(   )→(   )→乙</p>
-    <img src="16.png" alt="题图">
+    <img src="17.png" alt="题图">
     <br>
 </div>
 <div id="sns">
     <div id="pen" onclick="closeWindow()">★☆☆</div>
-    <div id="tiFrom">2022台州仙居期末</div>
+    <div id="tiFrom">2021九上舟山月考</div>
     <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
 </div>
 </body>
