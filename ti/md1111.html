@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]用电器 乙 63 减小电阻，使充电过程中产生的热量较少<br>[解析]第一空没解析<br>根据P=UI分别计算出两个充电器的功率，哪个功率大，哪个就是快充；再根据W=UIt计算出电池储存的电能，然后根据充电效率算出需要消耗的电能，最后根据t=W/P计算充电时间(注意此t非彼t)[<mathp>W<sub>储</sub>=UIt=3.7V×4.2A×3600s=55944J,W<sub>充</sub>=W<sub>储</sub>/74%=75600J,t=W<sub>充</sub>/P<sub>乙</sub>=75600J/20W=3780s=63min</mathp>]<br>同种材料和长度，导线越粗，电阻越小;根据焦耳定律Q=I<sup>2</sup>Rt可知，当电流和通电时间相同时，电阻越小，产生的热量越少";
+        c.appendChild(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>华为在手机及其它通讯设备的设计制造方面掌握了诸多高新科技成果(?)。小科妈妈买了华为Mate 20 pro手机。该手机采用了“超级快充技术”，不到半小时可把电池充达一半以上。妈妈不慎将快充充电头丢失，今天是妈妈生日，小科想用自己的零花钱给妈妈买一个快充充电头。<br>(1)电池在充电时，相当于____(选填"电源"或"用电器").<br>(2)如图所略的两个充电器甲、乙，甲标注“输出5V 600mA”，乙“输出5V 4A”，属于快充充电头的是____.假设充电效率为74%，用快充充电头把手机充满电需要____分钟.(3)小科发现，快充的充电线比普通充电线要粗一些，请你从线路安全的角度来分析为什么有这样的区别。</p>
+    <img src="md1111.png" alt="题图">
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">★★☆</div>
+    <div id="tiFrom">2020绍兴新昌九上期末</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>
