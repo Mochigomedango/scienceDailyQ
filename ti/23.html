@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]D<br>[解析]选D";
+        c.appendChild(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>如图电路中，电源电压保持不变。闭合开关<mathp>S</mathp>，当滑片移到滑动变阻器的<mathp>b</mathp>端时，电压表的示数为<mathp>8</mathp>伏，<mathp>10</mathp>秒内定值电阻<mathp>R1</mathp>做功为<mathp>20</mathp>焦；当滑片P移到滑动变阻器的中点时，电压表的示数为<mathp>6</mathp>伏。下列结果正确的是（    ）</p>
+    <img src="23.png" alt="题图">
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★★★困难</div>
+    <div id="tiFrom">2017乐清月考</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

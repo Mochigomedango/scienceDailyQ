@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]C。<br>[解析]见下图。";
+        c.appendChild(ans);
+        var iImg = document.createElement("img"); 
+        iImg.src = "24.png";
+        c.appendChild(iImg);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>将<mathp>a</mathp>克锌粒加入一定质量的<mathp>MgSO<sub>4</sub></mathp>、<mathp>CuSO<sub>4</sub></mathp>和<mathp>AgNO<sub>3</sub></mathp>的混合溶液中，充分反应后过滤，将滤渣洗涤、烘干后称量质量为<mathp>b</mathp>克，向滤液和滤渣中分别加入稀盐酸，下列有关现象和结论，不合理的是(    )<br>A.如果滤液中产生白色沉淀，则滤液的颜色为蓝色 B.滤渣的质量可能等于所加锌粒的质量 C.如果滤渣中有气体生成，则滤渣中一定含有4种金属 D.反应后所得滤液中至少含有两种金属离子</p>
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★★★困难</div>
+    <div id="tiFrom">2022北仑九上期末</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]6 10 3.6。<br>[解析]去年做过了。";
+        c.appendChild(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>如左图所示电路，电源电压保持不变，当闭合开关<mathp>S</mathp>，调节滑动变阻器从阻值最大变化到最小，两个电阻的“<mathp>U-I</mathp>”关系图象如右图所示。则电源电压为____<mathp>V</mathp>，定值电阻<mathp>R1</mathp>的阻值为____<mathp>Ω</mathp>，整个电路的最大功率为____<mathp>W</mathp>。</p>
+    <img src="25.png">
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★★★困难</div>
+    <div id="tiFrom">我也不知道哪来的题</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

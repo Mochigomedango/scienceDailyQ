@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]B。<br>[解析]从①到②的过程中，跳板的弹性势能会转化为运动员的机械能，这段时间内她的机械能增大：从②到③到④的过程中，不计空气阻力，则机械肩能守恒，也就是她的机械能保持不变。故选B。";
+        c.appendChild(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>2021年8月，全红婵在奥运会跳水项目的完美表现引起国人关注。图①是她站在跳板上压缩跳板至最低点，随后完成②③④动作。不考虑空气阻力，下列选项中能表示全红婵从起跳到即将入水的过程中，其机械能变化的图像是（    ）</p>
+    <img src="26.png">
+    </div>
+    <div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★★☆普通</div>
+    <div id="tiFrom">2022北仑九上期末</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

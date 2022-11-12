@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]减小 t1。<br>[解析](1)小球最初没有动能，只具有重力势能，因此判断重力势能的变化其实就是它机械能的变化。根据乙图可知，当小球静止下来时，它的高度小于最开始下落时的高度，即它的重力势能减小了，所以小球的机械能在不断减小；<br>(2)小球开始时只受重力，因此合力向下，做幼加速运动：接弹簧后受到向上的弹力，但合力仍然向下，继续做加速运动；当弹力和重力相等时，合力为0，加速停止，此时小球速度达到最大；接下来弹力大于重力，合力向上，小球开始故减速运动，因此当小球的重力和弹力相等时，速度最大，动能最大。";
+        c.appendChild(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.remove();
+        var ansId = document.querySelector("ans");
+        scoo = ansId.scrollTop
+        window.scrollBy({
+            top: scoo, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    } 
+}
+</script>
+
+</head>
+
+<div id="con">
+    <p>如图所示，将一根弹簧和一只质量为<mathp>1kg</mathp>的金属球（球上有一直小孔）套在铁架台的金属杆<mathp>AB</mathp>上面。现将小球提到<mathp>B</mathp>端后松手，小球的高度随时间变化的情况如图乙所示。
+    <br>(1)从<mathp>t1</mathp>到<mathp>t3</mathp>时刻，小球的机械能____（选填“增大”、“减小”、“先增大后减小”、“先减小后增大”或“不变”）。
+    <br>(2)在整个过程中，小球在____时动能最大。（选填“<mathp>t1</mathp>”或“<mathp>t2</mathp>”或“<mathp>t3</mathp>”）</p>
+    <img src="26.png">
+</div>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★★★★★罕见</div>
+    <div id="tiFrom">2019义乌九上期中</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>
