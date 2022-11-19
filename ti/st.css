@@ -1,5 +1,6 @@
 body{
     background-size:cover;
+    background-color: rgb(245,245,248);
 }
 p {
     /*text-align:center;*/
@@ -113,7 +114,6 @@ ans {
 }
 #sns {
     
-    margin-left:130px;
     font-size:30px;
     font-family: "黑体";
     color:white;
