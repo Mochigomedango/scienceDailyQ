@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var bo = document.getElementById('box');
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]C[解析]通过分析，我们了解了有性生殖和无性生殖的慨念，可知，①椒草的叶片长出新植株、③草履虫通过分裂产生新个体、⑤马铃薯的块茎发芽生根、⑥代孕母羊产下克隆羊多莉等的过程中无两性生殖细胞的结合，符合无性生殖的概念，属于无性繁殖；而②蛙的受精卵发育成料斟、④玉米种子种下长出玉米植株、⑦蚕蛾产下受精卵发育成蚕等的过程中都有精子和卵细胞结合成受精卵的过程，符合有性生殖的概念，都属于有性生殖。可见C符合题意。";
+        bo.append(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.innerHTML="答案错别字见谅";
+        xsansAId.style.cursor="default";
+    } 
+}
+</script>
+
+</head>
+<div id="box">
+    <p>下列生物新个体的产生，哪些是属于无性生殖（  ）
+        ①椒草的叶片长出新个体；②蛙的受精卵发育成蝌蚪；③草履虫通过分裂产生新个体；④玉米种子种下长出玉米幼苗；⑤马铃薯的块茎发芽生根；⑥代孕母羊产下克隆羊多利；⑦蚕蛾产下受精卵发育成蚕
+        A.①②③④
+        B.①③④⑤⑥
+        C.①③⑤⑥
+        D.②④⑥⑦</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★☆☆简单</div>
+    <div id="tiFrom" onclick="closeWindow()">2031绍兴越城七下期中</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

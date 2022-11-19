@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var bo = document.getElementById('box');
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]氧气 小肠 ②⑥ C[解析](1)气体总是由浓度高的地方向浓度低的地方扩散，直到平衡为止；肺泡中氧气的含量比血液中的多，而二氧化碳的含量比血液中的少；因此，血液流经肺泡外毛细血管时，氧气由肺泡扩散到血液里，二氧化炭由血液扩散到肺泡里，①所指的气体名称是氧气。<br>(2)③表示营养物质经消化系统消化后吸收进入循环系统，小肠是消化食物和吸收营养物质的主要场所，因此完成该过程的主要器官是小肠。<br>(3)二氧化碳通过呼气过程排出体外，尿液通过泌尿系统排除体外，即该过程产生的废物主要通过②⑥和皮肤排除体外。<br>(4)肾炎病人经治疗已恢复健康，他的尿液中不再含有大分子蛋白质和葡萄糖等物质，这是因为肾小球的滤过作用和肾小管的重吸收作用已恢复正常，C符合题意。";
+        bo.append(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.innerHTML="答案错别字见谅";
+        xsansAId.style.cursor="default";
+    } 
+}
+</script>
+
+</head>
+<div id="box">
+    <p>如图是人体呼吸、消化、循环、泌尿系统的功能联系示意图，①—⑥表示生理过程或物质,
+        (1)①表示的气体是____。
+        (2)图中③表示营养物质经消化系统吸收后进入循环系统，完成该过程的主要器官是____。
+        (3)图中④和⑤表示的是物质交换的过程，该过程产生的废物主要通过____（填序号）和皮肤排除体外。
+        (4)肾炎病人经治疗已恢复健康，他的尿液中不再含有大分子蛋白质和葡萄糖等物质，这是因为(
+        )已恢复正常。
+        A.肾小球的滤过作用
+        B.肾小管的重吸收作用
+        C.AB得兼</p>
+    <img src="32.png">
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★☆☆简单</div>
+    <div id="tiFrom" onclick="closeWindow()">2020九上拱墅月考</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

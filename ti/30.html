@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var bo = document.getElementById('box');
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]BCDA[解析](1)等量的Zn和F分别跟足量的稀盐酸反应，铁产生氢气质量大于锌，横坐标X表示所用金属质量的图为为B:<br>(2)足量的Zn和「分别跟等质量的稀盐酸反应，因锌的活动性大于铁，则锌反应速率大于铁（即相同时间锌产生氢气质量大于铁），等质量稀盐酸生成氢气质量相等，所以最终产生氢气质量相等，横坐标X表示反应时间的图为C;<br>(3)等量的Zn和F分别跟足量的稀盐酸反应，锌的活动性大于铁，则锌反应速率大于铁，最终完全反应时相等质量的铁产生氢气质量大于锌，故横坐标X表示反应时间的图为D;<br>(4)等量Zn和F分别跟足量的稀盐酸反应，相等质量的盐酸反应产生氢气相等，最终铁消耗盐酸质量大于锌，产生氢气质量铁大于锌，则横坐标X表示稀盐酸质量的图为A";
+        bo.append(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.innerHTML="答案错别字见谅";
+        xsansAId.style.cursor="default";
+    } 
+}
+</script>
+
+</head>
+<div id="box">
+    <p>以下是质量分数相同的稀盐酸与<mathp>Zn</mathp>、<mathp>Fe</mathp>金属反应生成氢气的四个关系图，图中纵坐标y均表示生成氢气的质量。
+        根据下面的描述选择对应的图像（填写字母)
+        (1)等量的<mathp>Zn</mathp>和<mathp>Fe</mathp>分别跟足量的稀盐酸反应，横坐标X表示所用金属质量的图。
+        (2)足量的<mathp>Zn</mathp>和<mathp>Fe</mathp>分别跟等质量的稀盐酸反应，横坐标X表示反应时间的图。
+        (3)等量的<mathp>Zn</mathp>和<mathp>Fe</mathp>分别跟足量的稀盐酸反应，横坐标X表示反应时间的图。
+        (4)等量的<mathp>Zn</mathp>和<mathp>Fe</mathp>分别跟足量的稀盐酸反应，横坐标X表示稀盐酸质量的图。</p>
+    <img src="30.png">
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★★☆普通</div>
+    <div id="tiFrom" onclick="closeWindow()">2022金华新鑫中学月考</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

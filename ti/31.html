@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var bo = document.getElementById('box');
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]<mathp>Ag</mathp>、<mathp>Fe</mathp> 变小 <mathp>Cl<sub>2</sub></mathp>,<mathp>Br<sub>2</sub></mathp>,<mathp>I<sub>2</sub></mathp>,<mathp>S</mathp>[解析]见图";
+        bo.append(ans);
+        var iImg = document.createElement("img"); 
+        iImg.src = "31.png";
+        bo.appendChild(iImg);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.innerHTML="答案错别字见谅";
+        xsansAId.style.cursor="default";
+    } 
+}
+</script>
+
+</head>
+<div id="box">
+    <p>小柯进行“探究金属的性质”实验。将锌粉和铁粉的混合物加入到盛有一定质量硝酸银溶液的烧杯中，充分反应后过滤，得到滤渣和滤液。
+        (1)若反应后所得滤液呈无色，则滤渣中一定含有____。
+        (2)反应后所得溶液与原硝酸银溶液的质量相比，质量____(填“变大”，“变小”，“无法确定”)
+        (3)非金属单质也具有类似金属与盐溶液之间反应的规律，即活动性较强的非金属可把活动性较弱的非金属从其盐溶液中置换出来。如在溶液中可发生下列反应： <mathp>Cl<sub>2</sub>+2NaBr=2NaCl+Br<sub>2</sub></mathp>,<mathp>I<sub>2</sub>+Na<sub>2</sub>S=2NaI+S↓</mathp>,<mathp>Br<sub>2</sub>+2KI=2KBr+I<sub>2</sub></mathp>。由此可以判断非金属单质<mathp>S</mathp>、<mathp>Cl<sub>2</sub></mathp>、<mathp>I<sub>2</sub></mathp>、<mathp>Br<sub>2</sub></mathp>活动性由强到弱顺序是____。</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★★☆普通</div>
+    <div id="tiFrom" onclick="closeWindow()">2020温州九上期中</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>

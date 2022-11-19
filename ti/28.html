@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科学每日一题</title>
+<!--七拼八凑的,能用就好-->
+<head>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script type = "text/javascript" src="sc.js"></script>
+<script>
+function xsAnswers(){
+    if (xs==false){
+        xs=true;
+        var bo = document.getElementById('box');
+        var ans = document.createElement("ans");
+        ans.innerHTML = "[答案]燃烧 平均 核桃仁 燃烧时大量的光和热辐射在环境中散失；测量时出现误差(称量、读数)等；燃烧装置（易拉權、锥你干瓶等)吸热；燃烧不充分；花生仁和核桃仁点燃后未迅速放入燃烧装置中；加热方式应用火焰的外焰加热推形瓶瓶底等";
+        bo.append(ans);
+        var xsansAId = document.getElementById('xsansSns');
+        xsansAId.innerHTML="答案错别字见谅";
+        xsansAId.style.cursor="default";
+    } 
+}
+</script>
+
+</head>
+<div id="box">
+    <img src="28.png">
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="sns">
+    <div id="pen" onclick="closeWindow()">难度:★☆☆简单</div>
+    <div id="xsansSns" onclick="xsAnswers()">显示答案解析</div>
+</div>
+</body>
+</html>
