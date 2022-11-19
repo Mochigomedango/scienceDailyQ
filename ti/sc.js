@@ -1,8 +1,3 @@
-var bodyBgs = [];
-bodyBgs[0] = "../images/01.jpg";
-bodyBgs[1] = "../images/02.jpg";
-var randomBgIndex = Math.round( Math.random() * 1 );
-document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') ;background-size: 100%}</style>');
 var link = document.createElement('link');
 link.rel = 'shortcut icon';
 link.href = '../favicon3.ico';
